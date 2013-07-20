@@ -12,8 +12,8 @@ app.get("/",function(request,response){
 	var html = "<h3>Recent Commits:</h3><br>";
 	for(var i=0;i<commits.length;i++){
 		var commit = commits[i];
+		html += "<hr>";
 		html += commit.author.name+" pushed: <pre>"+commit.message+"</pre> at time <pre>"+commit.timestamp+"</pre>";
-		html += "<br>";
 	}
 	response.send(html);
 });
