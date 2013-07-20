@@ -9,7 +9,7 @@ console.log('Express server started on port '+port);
 // Show all commits
 var commits = [];
 app.get("/",function(request,response){
-	var html = "<h3>Recent Commits:</h3><br>";
+	var html = "<h3>Recent Commits:</h3>";
 	for(var i=0;i<commits.length;i++){
 		var commit = commits[i];
 		html += "<hr>";
