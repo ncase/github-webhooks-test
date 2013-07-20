@@ -28,7 +28,7 @@ app.post("/github",function(request,response){
 		return;
 	}
 
-	// Append commits
+	// Append new commits
 	console.log(request.body);
 	console.log(request.body.payload);
 	console.log(request.body.payload.commits);
