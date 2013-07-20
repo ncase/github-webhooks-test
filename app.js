@@ -29,6 +29,9 @@ app.post("/github",function(request,response){
 	}
 
 	// Append commits
+	console.log(request.body);
+	console.log(request.body.payload);
+	console.log(request.body.payload.commits);
 	var payload = request.body.payload;
 	var newCommits = payload.commits;
 	commits.push.apply(commits,newCommits);
